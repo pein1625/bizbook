@@ -387,3 +387,19 @@ function getTimeRemaining(endtime) {
     seconds: seconds
   };
 }
+
+$(function () {
+  $(".js-avatar-input").change(function () {
+    var input = this;
+
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        $(".js-avatar-preview").attr("src", e.target.result);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  });
+});

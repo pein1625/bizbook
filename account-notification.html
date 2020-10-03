@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="./css/libs.css" />
+        <link rel="stylesheet" href="./css/app.css" />
+        <script src="./js/libs.js" defer="defer"></script>
+        <script src="./js/app.js" defer="defer"></script>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0" nonce="QH5eTQTz"></script>
+        <div class="page">
+            <!-- header-->
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="container">
+                        <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                            <div class="header__elements"><a class="header__btn" href="#!"><img src="./images/icon-bell.png" alt="" /><span>THÔNG BÁO</span>
+                                    <div class="header__btn-number">2</div>
+                                </a><a class="header__btn" href="#!"><img src="./images/icon-shopping-cart.png" alt="" /><span>GIỎ HÀNG</span>
+                                    <div class="header__btn-number">2</div>
+                                </a><a class="header__btn" href="#!"><img src="./images/icon-sign-in.png" alt="" /><span>ĐĂNG NHẬP</span></a>
+                                <div class="lang"><a class="lang__toggle" href="#!"><img src="./images/vn.svg" alt="" /><i class="fa fa-angle-down ml-2"></i></a>
+                                    <div class="lang__dropdown"><a class="lang__item" href="#!"><img src="./images/vn.svg" alt="" />Tiếng Việt</a><a class="lang__item" href="#!"><img src="./images/gb.svg" alt="" />English</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navigation js-scroll-fixed">
+                    <div class="navigation__wrapper">
+                        <div class="container">
+                            <div class="navigation__inner">
+                                <section class="navbar js-navbar">
+                                    <div class="navbar__backdrop js-navbar-toggle"></div>
+                                    <div class="navbar__wrapper">
+                                        <div class="navbar__header"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
+                                            <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
+                                        </div>
+                                        <div class="navbar__body">
+                                            <div class="n-menu">
+                                                <div class="n-menu__title">Danh mục sản phẩm</div>
+                                                <div class="n-menu__dropdown">
+                                                    <ul class="menu menu-root">
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Doanh Nhân Và Doanh Nghiệp</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Nghệ Thuật Sống - Tâm Lý</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Tình Yêu - Hạnh Phúc</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Sức Khoẻ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Tài Chính Cá Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Góc Doanh Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Báo Chí - Sự Kiện - Người Nổi Tiếng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Tác Giả</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./about.html">Về Chúng Tôi</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                            <ul class="menu menu-sub">
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                                <li class="menu-item"><a class="menu-link" href="#!">Danh mục con</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="menu h-menu">
+                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-flash-sale.png" alt="" />Flash Sale</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-pre-order.png" alt="" />Pre Oder</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-ranking.png" alt="" />Bảng Xếp Hạng</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-user-star.png" alt="" />Thành Viên</a></li>
+                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-shield.png" alt="" />Gợi Ý Cho Bạn</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                                <form class="search">
+                                    <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm mong muốn..." />
+                                </form>
+                                <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page__content">
+                <!-- main content-->
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-unstyled" href="#!">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Thông tin tài khoản</li>
+                    </ol>
+                    <div class="grid-2 mb-50">
+                        <div class="grid-2__main grid-2__main--custom">
+                            <section class="section-4">
+                                <div class="section-4__header pb-0">
+                                    <h2 class="section-4__title">Thông báo của tôi</h2>
+                                    <ul class="nav notification-tabs">
+                                        <li class="nav-item"><a class="nav-link active" href="#notification-tab-1" data-toggle="tab"><i class="fa fa-2x fa-fw fa-home"></i></a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#notification-tab-2" data-toggle="tab"><i class="fa fa-2x fa-fw fa-gift"></i></a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#notification-tab-3" data-toggle="tab"><i class="fa fa-2x fa-fw fa-list"></i></a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#notification-tab-4" data-toggle="tab"><i class="fa fa-2x fa-fw fa-clock-o"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="notification-tab-1">
+                                        <table class="table table-expand-lg acc-notification">
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="notification-tab-2">
+                                        <table class="table table-expand-lg acc-notification">
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="notification-tab-3">
+                                        <table class="table table-expand-lg acc-notification">
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="notification-tab-4">
+                                        <table class="table table-expand-lg acc-notification">
+                                            <tbody>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-label="Thời gian">08/04/2020</td>
+                                                    <td data-label=""><img class="acc-notification__icon" src="./images/icon-notification-1.png" alt="" style="min-width: 40px;"></td>
+                                                    <td class="text-12" data-label="Nội dung">Tiki gửi lời xin lỗi quý khách vì đơn hàng 780302573 có (các) sản phẩm đã phát sinh lỗi lưu kho. Tiki xin phép hủy đơn hàng và gửi tặng voucher giảm 5%, tối đa 50.000 đ khi mua sản phẩm: Mã voucher: WB_EK1L25H Hạn sử dụng: 08/07/2020 Áp dụng khi mua hàng tại Tiki.vn Số lần sử dụng: 01 Chi tiết về cách sử dụng voucher này, vui lòng tham khảo tại: http://bit.ly/HD-su-dung-Coupon hoặc liên hệ 19006035 để được hỗ trợ. Cảm ơn quý khách đã lựa chọn mua sắm tại Tiki.null</td>
+                                                    <td data-label=""><a class="text-danger" href="#!">Xoá</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="grid-2__aside">
+                            <div class="media align-items-center mb-3">
+                                <div class="frame-circle mr-20" style="width: 50px"><img src="https://pavatar.qom.vn/637" alt="" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="text-12">Tài khoản của</div>
+                                    <div>Đinh Văn Phú</div>
+                                </div>
+                            </div>
+                            <ul class="acc-menu">
+                                <li class="acc-menu__item"><a class="acc-menu__link active" href="#!"><i class="fa fa-lg fa-fw fa-user"></i>Thông tin tài khoản</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-bell"></i>Thông báo của tôi</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-book"></i>Quản lý đơn hàng</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i>Nhận xét sản phẩm đã mua</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-eye"></i>Sản phẩm bạn đã xem</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-heart"></i>Sản phẩm yêu thích</a></li>
+                                <li class="acc-menu__item"><a class="acc-menu__link" href="#!"><i class="fa fa-lg fa-fw fa-shopping-cart"></i> Sản phẩm để mua sau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Follow-->
+            <section class="follow">
+                <div class="container">
+                    <div class="follow__inner">
+                        <div class="follow__label"><img src="./images/icon-envelope-o.png" alt="" />Đăng ký nhận bản tin</div>
+                        <form class="follow__form" action="">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="Nhập email của bạn" />
+                                <div class="input-group-append">
+                                    <button class="input-group-text">Đăng ký</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__grid">
+                        <div class="footer__col"><a class="footer__logo" href="#!"><img src="./images/logo.png" alt="logo" /></a>
+                            <div class="footer__content">
+                                <p>BIZBOOKS - SÁCH DÀNH CHO DOANH NHÂN<br />Địa chỉ VP Hà Nội: Số 2- đường Đức Diễn- phường Phúc Diễn- Quận Bắc Từ Liêm-Hà Nội.<br />Địa chỉ công ty : Lô 34E - Khu đấu giá 3ha - Phúc Diễn - Bắc Từ Liêm - Hà Nội.<br />Hotline: 1900 2875 - 0243 789 2666</p>
+                                <p>Chi nhánh: Số 45 đường 8, KP5, Hiệp Bình Chánh, Thủ Đức, TP Hồ Chí Minh.<br />Hotline:(84-4) 37.921.466 - Máy lẻ: 122 - 0866609398<br />Email: cskh@bizbooks.vn</p>
+                            </div>
+                        </div>
+                        <div class="footer__col">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="footer__title">Giới thiệu về Bizbooks</div>
+                                    <ul class="f-menu">
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Điều khoản sử dụng</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Giới thiệu BizBooks</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Hệ thống</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Trung tâm - nhà sách</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="footer__title">Sản phẩm</div>
+                                    <ul class="f-menu">
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Doanh nhân và Doanh nghiệp</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Nghệ thuật sống – Tâm lý</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Tình yêu – Hạnh phúc</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Sức khỏe</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Tài chính cá nhân</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="footer__title">Tin tức - Sự kiện</div>
+                                    <ul class="f-menu">
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Báo chí</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Sự kiện – Hội thảo</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Người nổi tiếng</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md mb-4 mb-md-0">
+                                    <div class="footer__title">Kết nối với Bizbooks</div>
+                                    <nav class="f-social"><a class="f-social__item" href="#!"><i class="fa fa-facebook"></i></a><a class="f-social__item" href="#!"><i class="fa fa-youtube-play"></i></a><a class="f-social__item" href="#!"><i class="fa fa-pinterest"></i></a><a class="f-social__item" href="#!"><i class="fa fa-instagram"></i></a><a class="f-social__item" href="#!"><i class="fa fa-tumblr"></i></a><a class="f-social__item" href="#!"><i class="fa fa-twitter"></i></a></nav>
+                                    <div class="footer__title">Tải ứng dụng</div>
+                                    <div class="f-download"><a class="f-download__item" href="#!"><img src="./images/google-play.png" alt="" /></a><a class="f-download__item" href="#!"><img src="./images/app-store.png" alt="" /></a></div>
+                                </div>
+                                <div class="col-md-3 mb-4 mb-md-0">
+                                    <div class="footer__title">Thanh toán</div><img src="./images/payment.jpg" alt="" />
+                                </div>
+                                <div class="col-md">
+                                    <div class="footer__title">Fanpage</div>
+                                    <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote class="fb-xfbml-parse-ignore" cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- modals + sticky widgets-->
+            <div class="sticky-btns"><a class="sticky-btns__item" href="#!"><img src="./images/icon-phone-circle.png" alt="" /></a><a class="sticky-btns__item" href="#!"><img src="./images/icon-messenger.png" alt="" /></a><a class="sticky-btns__item js-scroll-to" href="#!" data-target="body"><img src="./images/icon-angle-up-circle.png" alt="" /></a></div>
+            <div class="md-success modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content md-success__content">
+                        <div class="text-center mb-4"><img src="./images/icon-check-circle-white.png" alt="" width="60" height="60" /></div>
+                        <div class="text-white text-center mb-30">
+                            <div class="text-700 text-uppercase mb-1">Bạn đã đặt hàng thành công</div>
+                            <div>Số đơn hàng: <strong>#400416361</strong></div>
+                            <div>Thời gian giao hàng: <strong>3 - 5 ngày</strong></div>
+                            <div class="text-italic">Bạn sẽ sớm nhận được email xác nhận đơn hàng từ chúng tôi!</div>
+                        </div>
+                        <div class="text-center">
+                            <button class="button button--gradient" type="button" data-dismiss="modal">Tiếp tục mua hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md-cart modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content md-cart__content">
+                        <div class="text-center mb-10"><img src="./images/icon-check-circle-blue.png" alt="" width="60" height="60" /></div>
+                        <div class="text-center text-secondary text-uppercaset text-700 pb-20 mb-20 border-bottom">ĐÃ THÊM VÀO GIỎ HÀNG THÀNH CÔNG</div>
+                        <div class="product-9 product-9--custom media"><a class="product-9__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                            <div class="media-body">
+                                <div class="product-9__title"><a href="./product-detail.html">Sự Im Lặng Của Bầy Cừu (Tái Bản 2019)</a></div>
+                                <div class="product-9__info">
+                                    <div>- Tác giả: <a href="#!">David Magee</a></div>
+                                    <div>Sách có thể bọc bằng <span class="text-secondary">BookCare</span></div>
+                                </div>
+                                <div class="product-9__btns"><a class="product-9__btn" href="#!">Xoá</a><a class="product-9__btn" href="#!">Để dành mua sau</a></div>
+                            </div>
+                        </div>
+                        <div class="product-9 product-9--custom media"><a class="product-9__frame" href="./product-detail.html"><img src="./images/product-1.jpg" alt="" /></a>
+                            <div class="media-body">
+                                <div class="product-9__title"><a href="./product-detail.html">Sự Im Lặng Của Bầy Cừu (Tái Bản 2019)</a></div>
+                                <div class="product-9__info">
+                                    <div>- Tác giả: <a href="#!">David Magee</a></div>
+                                    <div>Sách có thể bọc bằng <span class="text-secondary">BookCare</span></div>
+                                </div>
+                                <div class="product-9__btns"><a class="product-9__btn" href="#!">Xoá</a><a class="product-9__btn" href="#!">Để dành mua sau</a></div>
+                            </div>
+                        </div>
+                        <div class="md-cart__btns">
+                            <button class="button" type="button" data-dismiss="modal">Tiếp tục mua hàng</button><a class="button button--primary" href="./cart.html">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
