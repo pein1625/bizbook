@@ -268,7 +268,7 @@ $(function () {
 $(function () {
   $(".lang__toggle").on("click", function (e) {
     e.stopPropagation();
-    $(".lang__dropdown").fadeToggle();
+    $(".lang__dropdown").fadeToggle("fast");
   });
 
   $(".lang__dropdown").on("click", function (e) {
@@ -276,7 +276,7 @@ $(function () {
   });
 
   $("html, body").on("click", function () {
-    $(".lang__dropdown").fadeOut();
+    $(".lang__dropdown").fadeOut("fast");
   });
 });
 
@@ -401,5 +401,36 @@ $(function () {
 
       reader.readAsDataURL(input.files[0]);
     }
+  });
+});
+
+$(function () {
+  $(".js-switch-modal").on("click", function (e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+
+    if (!target) return;
+
+    $(this).closest(".modal").modal("hide");
+
+    setTimeout(function () {
+      $(target).modal("show");
+    }, 300);
+  });
+});
+
+$(function () {
+  $(".js-header-dropdown").on("click", function (e) {
+    e.stopPropagation();
+    $(this).siblings(".h-dropdown__menu").fadeToggle("fast");
+    $(".h-dropdown__menu").not($(this).siblings(".h-dropdown__menu")).fadeOut("fast");
+  });
+
+  $(".h-dropdown__menu").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $("html, body").on("click", function () {
+    $(".h-dropdown__menu").fadeOut("fast");
   });
 });
