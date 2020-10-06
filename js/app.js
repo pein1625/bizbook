@@ -434,3 +434,14 @@ $(function () {
     $(".h-dropdown__menu").fadeOut("fast");
   });
 });
+
+$(function () {
+  $('.h-dropdown__item[data-toggle="modal"]').on("click", function (e) {
+    e.preventDefault();
+    var target = $(this).attr("href");
+
+    if ($(target).length) {
+      $(target).modal("show");
+    }
+  });
+});
