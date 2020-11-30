@@ -178,6 +178,47 @@ $(function () {
   });
 });
 
+$(function () {
+  if (!$(".rank-slider").length) {
+    return;
+  }
+
+  var rankSliders = addSwiper(".rank-slider", {
+    direction: "vertical",
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    spaceBetween: 10,
+    preventClicks: false,
+    preventClicksPropagation: false,
+    spaceBetween: 15
+  });
+
+  $(".rank-slider__slide").on("mouseenter click", function () {
+    var $el = $(this);
+    var target = $(this).data("target");
+
+    if ($el.hasClass("is-selected")) return;
+
+    $el.addClass("is-selected").siblings().removeClass("is-selected");
+
+    $(target).addClass("show active").siblings().removeClass("show active");
+
+    if ($(window).width() < 768 && $("#rank-detail-tabs").length) {
+      $("html, body").animate({
+        scrollTop: $("#rank-detail-tabs").offset().top - 30
+      }, 600);
+    }
+  });
+
+  $(".js-rank-tab").on("shown.bs.tab", function () {
+    rankSliders.map(function (slider) {
+      slider.update();
+    });
+  });
+});
+
 // smooth scroll to div
 
 $(function () {
@@ -331,20 +372,41 @@ $(function () {
   });
 });
 
+var timeinterval = null;
+
 $(function () {
+  startCountDown();
+});
+
+function startCountDown() {
+  if (timeinterval) {
+    clearInterval(timeinterval);
+  }
+
   $dealine = $("#js-deadline");
   if ($dealine.length) {
     const deadline = $dealine.data("deadline");
     initialClock("js-deadline", deadline);
   }
-});
+}
 
 function initialClock(id, endtime) {
   var clock = document.getElementById(id);
   if (!clock) {
     return;
   }
-  var timeinterval = setInterval(function () {
+
+  var t = getTimeRemaining(endtime);
+  clock.innerHTML = `
+<span>${t.hours}</span>
+<span>${t.minutes}</span>
+<span>${t.seconds}</span>
+  `;
+  if (t.total <= 0) {
+    clearInterval(timeinterval);
+  }
+
+  timeinterval = setInterval(function () {
     var t = getTimeRemaining(endtime);
     clock.innerHTML = `
 <span>${t.hours}</span>
@@ -443,5 +505,28 @@ $(function () {
     if ($(target).length) {
       $(target).modal("show");
     }
+  });
+});
+
+$(function () {
+  $(".flash-timer__item").on("click", function (e) {
+    e.preventDefault();
+
+    var $el = $(this);
+
+    if ($el.hasClass("active")) return;
+
+    var deadline = $(this).data("deadline");
+    var label = $(this).data("label");
+    var target = $(this).attr("href");
+
+    $el.addClass("active").siblings().removeClass("active");
+    $(target).addClass("show active").siblings().removeClass("show active");
+
+    $(".countdown__label").text(label);
+
+    $("#js-deadline").data("deadline", deadline);
+
+    startCountDown();
   });
 });
