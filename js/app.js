@@ -205,11 +205,18 @@ $(function () {
 
     $(target).addClass("show active").siblings().removeClass("show active");
 
-    if ($(window).width() < 768 && $("#rank-detail-tabs").length) {
-      $("html, body").animate({
-        scrollTop: $("#rank-detail-tabs").offset().top - 30
-      }, 600);
-    }
+    // if (
+    //   $(window).width() < 768 &&
+    //   $("#rank-detail-tabs").length &&
+    //   $("#rank-detail-tabs").offset().top
+    // ) {
+    //   $("html, body").animate(
+    //     {
+    //       scrollTop: $("#rank-detail-tabs").offset().top - 30,
+    //     },
+    //     600
+    //   );
+    // }
   });
 
   $(".js-rank-tab").on("shown.bs.tab", function () {
