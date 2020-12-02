@@ -437,7 +437,8 @@ function getTimeRemaining(endtime) {
   };
   var seconds = Math.floor(t / 1000 % 60);
   var minutes = Math.floor(t / 1000 / 60 % 60);
-  var hours = Math.floor(t / (1000 * 60 * 60) % 24);
+  // var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var hours = Math.floor(t / (1000 * 60 * 60));
   var days = Math.floor(t / (1000 * 60 * 60 * 24));
   if (days > 99) {
     days = 99;
