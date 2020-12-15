@@ -192,7 +192,8 @@ $(function () {
     spaceBetween: 10,
     preventClicks: false,
     preventClicksPropagation: false,
-    spaceBetween: 15
+    spaceBetween: 15,
+    touchReleaseOnEdges: true
   });
 
   $(".rank-slider__slide").on("mouseenter click", function () {
