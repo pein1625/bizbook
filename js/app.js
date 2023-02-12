@@ -227,6 +227,28 @@ $(function () {
   });
 });
 
+$(function () {
+  if (!$(".expert-slider").length) {
+    return;
+  }
+
+  addSwiper(".expert-slider", {
+    slidesPerView: 2,
+    navigation: true,
+    loop: true,
+    speed: 400,
+    breakpoints: {
+      768: {
+        slidesPerView: 3
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 16
+      }
+    }
+  });
+});
+
 // smooth scroll to div
 
 $(function () {
@@ -551,5 +573,53 @@ $(function () {
   $(".float-sidebar__close").on("click", function () {
     $(this).closest(".float-sidebar").removeClass("is-show");
     $("body").removeClass("overflow-hidden");
+  });
+});
+
+$(function () {
+  const video = document.querySelector('.js-video');
+
+  if (!video) return;
+
+  $(video).bind('contextmenu', function () {
+    return false;
+  });
+
+  video.oncanplay = checkIsVideoAutoplay;
+
+  $('.js-video-control').on('click', function (e) {
+    e.preventDefault();
+
+    const type = $(this).data('type');
+
+    if (type === 'backward') {
+      video.currentTime -= 10;
+    } else if (type === 'forward') {
+      video.currentTime += 10;
+    } else if (type === 'autoplay') {
+      $(this).toggleClass('is-autoplay');
+
+      localStorage.isVideoAutoplay = $(this).hasClass('is-autoplay') ? 1 : 0;
+    }
+  });
+
+  function checkIsVideoAutoplay() {
+    if (localStorage.isVideoAutoplay != '1') return false;
+
+    $('.js-video-control[data-type="autoplay"]').addClass('is-autoplay');
+
+    video.play();
+
+    console.log('play');
+  }
+});
+
+$(function () {
+  $('.course-menu__part-name').on('click', function (e) {
+    e.preventDefault();
+
+    $(this).toggleClass('is-collapsed');
+
+    $(this).siblings('.course-menu__lessons').slideToggle();
   });
 });

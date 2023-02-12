@@ -17,10 +17,12 @@
             <!-- header-->
             <header class="header">
                 <div class="header__wrapper">
-                    <div class="container">
+                    <div class="container"><a href="#!"><img class="header__banner" src="./images/header-banner.jpg" alt="" /></a>
                         <div class="header__inner"><a class="logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
                             <div class="header__elements">
-                                <div class="h-dropdown"><a class="h-dropdown__toggle js-header-dropdown" href="#!"><img src="./images/icon-bell.png" alt="" /><span>THÔNG BÁO</span>
+                                <!-- for desktop-->
+                                <nav class="h-btns d-none d-xl-flex"><a class="h-btns__btn" href="./activate.html">Kích hoạt khoá học<i class="fa fa-unlock-alt ml-2"></i></a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-2"></i>Vào học</a></nav>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle js-header-dropdown" href="#!"><img src="./images/icon-bell.png" alt="" />
                                         <div class="header__btn-number">2</div>
                                     </a>
                                     <div class="h-dropdown__menu"><a class="h-notification media" href="#!"><img class="h-notification__icon" src="./images/icon-notification-1.png" alt="" />
@@ -46,14 +48,11 @@
                                         </a><a class="h-dropdown__viewall" href="./account-notification.html">Xem tất cả thông báo</a>
                                     </div>
                                 </div>
-                                <div class="h-dropdown"><a class="h-dropdown__toggle" href="./cart.html"><img src="./images/icon-shopping-cart.png" alt="" /><span>GIỎ HÀNG</span>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle" href="./cart.html"><img src="./images/icon-shopping-cart.png" alt="" />
                                         <div class="header__btn-number">2</div>
                                     </a></div>
-                                <div class="h-dropdown"><a class="h-dropdown__toggle js-header-dropdown" href="#md-signin" data-toggle="modal"><img src="./images/icon-sign-in.png" alt="" /><span>ĐĂNG NHẬP</span></a>
-                                    <div class="h-dropdown__menu h-dropdown__menu--sm"><a class="h-dropdown__item" href="#md-signin" data-toggle="modal"><i class="fa fa-fw fa-sign-in mr-3"></i>Đăng nhập</a><a class="h-dropdown__item" href="#md-signup" data-toggle="modal"><i class="fa fa-fw fa-user-plus mr-3"></i>Tạo tài khoản</a></div>
-                                </div>
-                                <div class="lang"><a class="lang__toggle" href="#!"><img src="./images/vn.svg" alt="" /><i class="fa fa-angle-down ml-2"></i></a>
-                                    <div class="lang__dropdown"><a class="lang__item" href="#!"><img src="./images/vn.svg" alt="" />Tiếng Việt</a><a class="lang__item" href="#!"><img src="./images/gb.svg" alt="" />English</a></div>
+                                <div class="h-dropdown"><a class="h-dropdown__toggle w-auto h-auto js-header-dropdown" href="#md-signin" data-toggle="modal"><img class="h-avatar" src="./images/avatar-placeholder.jpg" alt="" /></a>
+                                    <div class="h-dropdown__menu h-dropdown__menu--sm h-dropdown__menu--user"><a class="h-dropdown__item" href="#md-signin" data-toggle="modal"><i class="fa fa-fw fa-sign-in mr-3"></i>Đăng nhập</a><a class="h-dropdown__item" href="#md-signup" data-toggle="modal"><i class="fa fa-fw fa-user-plus mr-3"></i>Tạo tài khoản</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-list-alt mr-3"></i>Vào học</a><a class="h-dropdown__item" href="./activate.html"><i class="fa fa-fw fa-key mr-3"></i>Kích hoạt khoá học</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-sign-in mr-3"></i>Cập nhật hồ sơ</a><a class="h-dropdown__item" href="#!"><i class="fa fa-fw fa-credit-card mr-3"></i>Ví của bạn</a></div>
                                 </div>
                             </div>
                         </div>
@@ -70,11 +69,13 @@
                                             <button class="navbar-toggle js-navbar-toggle ml-auto"><span></span><span></span><span></span></button>
                                         </div>
                                         <div class="navbar__body">
+                                            <!-- for mobile-->
+                                            <nav class="h-btns d-xl-none"><a class="h-btns__btn" href="./activate.html"><i class="fa fa-unlock-alt mr-3"></i>Kích hoạt khoá học</a><a class="h-btns__btn h-btns__btn--primary" href="#!"><i class="fa fa-sign-in mr-3"></i>Vào học</a></nav>
                                             <div class="n-menu">
                                                 <div class="n-menu__title">Danh mục sản phẩm</div>
                                                 <div class="n-menu__dropdown">
                                                     <ul class="menu menu-root">
-                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./products.html">Doanh Nhân Và Doanh Nghiệp</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-group"><a class="menu-link" href="./course.html">Doanh Nhân Và Doanh Nghiệp</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <ul class="menu menu-sub">
                                                                 <li class="menu-item"><a class="menu-link" href="#!">Danh mục cấp 2</a>
                                                                 </li>
@@ -92,7 +93,7 @@
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Nghệ Thuật Sống - Tâm Lý</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Nghệ Thuật Sống - Tâm Lý</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -154,7 +155,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tình Yêu - Hạnh Phúc</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Tình Yêu - Hạnh Phúc</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -216,7 +217,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Sức Khoẻ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Sức Khoẻ</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -278,7 +279,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tài Chính Cá Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Tài Chính Cá Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -340,7 +341,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Góc Doanh Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Góc Doanh Nhân</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -402,7 +403,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Báo Chí - Sự Kiện - Người Nổi Tiếng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Báo Chí - Sự Kiện - Người Nổi Tiếng</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -464,7 +465,7 @@
                                                                 </ul>
                                                             </div>
                                                         </li>
-                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./products.html">Tác Giả</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
+                                                        <li class="menu-item menu-item-mega menu-item-group"><a class="menu-link" href="./course.html">Tác Giả</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
                                                             <div class="menu-mega">
                                                                 <ul class="menu menu-sub">
                                                                     <li class="menu-item menu-item-group"><a class="menu-link" href="#!">Danh mục cấp 2</a><span class="menu-toggle"><span><i class="fa fa-angle-right"></i></span></span>
@@ -591,18 +592,12 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <ul class="menu h-menu">
-                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-flash-sale.png" alt="" />Flash Sale</a></li>
-                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-pre-order.png" alt="" />Pre Oder</a></li>
-                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-ranking.png" alt="" />Bảng Xếp Hạng</a></li>
-                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-user-star.png" alt="" />Thành Viên</a></li>
-                                                <li class="menu-item"><a class="menu-link" href="#!"><img src="./images/icon-shield.png" alt="" />Gợi Ý Cho Bạn</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </section>
                                 <form class="search">
-                                    <input class="form-control" type="text" placeholder="Tìm kiếm sản phẩm mong muốn..." />
+                                    <input class="form-control" type="text" placeholder="Tìm kiếm thông tin..." />
+                                    <button class="input-group-text"><i class="fa fa-search"></i></button>
                                 </form>
                                 <button class="navbar-toggle d-xl-none js-navbar-toggle ml-10"><span></span><span></span><span></span></button>
                             </div>
@@ -637,7 +632,7 @@
                                             <div class="product-2__rank"><span>01</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -648,7 +643,7 @@
                                             <div class="product-2__rank"><span>02</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -659,7 +654,7 @@
                                             <div class="product-2__rank"><span>03</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -670,7 +665,7 @@
                                             <div class="product-2__rank"><span>04</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -681,7 +676,7 @@
                                             <div class="product-2__rank"><span>05</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -692,7 +687,7 @@
                                             <div class="product-2__rank"><span>06</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -703,7 +698,7 @@
                                             <div class="product-2__rank"><span>07</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -714,7 +709,7 @@
                                             <div class="product-2__rank"><span>08</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -725,7 +720,7 @@
                                             <div class="product-2__rank"><span>09</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -736,7 +731,7 @@
                                             <div class="product-2__rank"><span>10</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -747,7 +742,7 @@
                                             <div class="product-2__rank"><span>11</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -758,7 +753,7 @@
                                             <div class="product-2__rank"><span>12</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -769,7 +764,7 @@
                                             <div class="product-2__rank"><span>13</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -780,7 +775,7 @@
                                             <div class="product-2__rank"><span>14</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -791,7 +786,7 @@
                                             <div class="product-2__rank"><span>15</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -802,7 +797,7 @@
                                             <div class="product-2__rank"><span>16</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -813,7 +808,7 @@
                                             <div class="product-2__rank"><span>17</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -824,7 +819,7 @@
                                             <div class="product-2__rank"><span>18</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -835,7 +830,7 @@
                                             <div class="product-2__rank"><span>19</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -846,7 +841,7 @@
                                             <div class="product-2__rank"><span>20</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -859,7 +854,7 @@
                                             <div class="product-2__rank"><span>01</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -870,7 +865,7 @@
                                             <div class="product-2__rank"><span>02</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -881,7 +876,7 @@
                                             <div class="product-2__rank"><span>03</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -892,7 +887,7 @@
                                             <div class="product-2__rank"><span>04</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -903,7 +898,7 @@
                                             <div class="product-2__rank"><span>05</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -914,7 +909,7 @@
                                             <div class="product-2__rank"><span>06</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -925,7 +920,7 @@
                                             <div class="product-2__rank"><span>07</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -936,7 +931,7 @@
                                             <div class="product-2__rank"><span>08</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -947,7 +942,7 @@
                                             <div class="product-2__rank"><span>09</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -958,7 +953,7 @@
                                             <div class="product-2__rank"><span>10</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -969,7 +964,7 @@
                                             <div class="product-2__rank"><span>11</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -980,7 +975,7 @@
                                             <div class="product-2__rank"><span>12</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -991,7 +986,7 @@
                                             <div class="product-2__rank"><span>13</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1002,7 +997,7 @@
                                             <div class="product-2__rank"><span>14</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1013,7 +1008,7 @@
                                             <div class="product-2__rank"><span>15</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1024,7 +1019,7 @@
                                             <div class="product-2__rank"><span>16</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1035,7 +1030,7 @@
                                             <div class="product-2__rank"><span>17</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1046,7 +1041,7 @@
                                             <div class="product-2__rank"><span>18</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1057,7 +1052,7 @@
                                             <div class="product-2__rank"><span>19</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1068,7 +1063,7 @@
                                             <div class="product-2__rank"><span>20</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1081,7 +1076,7 @@
                                             <div class="product-2__rank"><span>01</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1092,7 +1087,7 @@
                                             <div class="product-2__rank"><span>02</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1103,7 +1098,7 @@
                                             <div class="product-2__rank"><span>03</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1114,7 +1109,7 @@
                                             <div class="product-2__rank"><span>04</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1125,7 +1120,7 @@
                                             <div class="product-2__rank"><span>05</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1136,7 +1131,7 @@
                                             <div class="product-2__rank"><span>06</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1147,7 +1142,7 @@
                                             <div class="product-2__rank"><span>07</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1158,7 +1153,7 @@
                                             <div class="product-2__rank"><span>08</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1169,7 +1164,7 @@
                                             <div class="product-2__rank"><span>09</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1180,7 +1175,7 @@
                                             <div class="product-2__rank"><span>10</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1191,7 +1186,7 @@
                                             <div class="product-2__rank"><span>11</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1202,7 +1197,7 @@
                                             <div class="product-2__rank"><span>12</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1213,7 +1208,7 @@
                                             <div class="product-2__rank"><span>13</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1224,7 +1219,7 @@
                                             <div class="product-2__rank"><span>14</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1235,7 +1230,7 @@
                                             <div class="product-2__rank"><span>15</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1246,7 +1241,7 @@
                                             <div class="product-2__rank"><span>16</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1257,7 +1252,7 @@
                                             <div class="product-2__rank"><span>17</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1268,7 +1263,7 @@
                                             <div class="product-2__rank"><span>18</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1279,7 +1274,7 @@
                                             <div class="product-2__rank"><span>19</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1290,7 +1285,7 @@
                                             <div class="product-2__rank"><span>20</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1303,7 +1298,7 @@
                                             <div class="product-2__rank"><span>01</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1314,7 +1309,7 @@
                                             <div class="product-2__rank"><span>02</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1325,7 +1320,7 @@
                                             <div class="product-2__rank"><span>03</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1336,7 +1331,7 @@
                                             <div class="product-2__rank"><span>04</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1347,7 +1342,7 @@
                                             <div class="product-2__rank"><span>05</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1358,7 +1353,7 @@
                                             <div class="product-2__rank"><span>06</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1369,7 +1364,7 @@
                                             <div class="product-2__rank"><span>07</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1380,7 +1375,7 @@
                                             <div class="product-2__rank"><span>08</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1391,7 +1386,7 @@
                                             <div class="product-2__rank"><span>09</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1402,7 +1397,7 @@
                                             <div class="product-2__rank"><span>10</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1413,7 +1408,7 @@
                                             <div class="product-2__rank"><span>11</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1424,7 +1419,7 @@
                                             <div class="product-2__rank"><span>12</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1435,7 +1430,7 @@
                                             <div class="product-2__rank"><span>13</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1446,7 +1441,7 @@
                                             <div class="product-2__rank"><span>14</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1457,7 +1452,7 @@
                                             <div class="product-2__rank"><span>15</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1468,7 +1463,7 @@
                                             <div class="product-2__rank"><span>16</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1479,7 +1474,7 @@
                                             <div class="product-2__rank"><span>17</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1490,7 +1485,7 @@
                                             <div class="product-2__rank"><span>18</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1501,7 +1496,7 @@
                                             <div class="product-2__rank"><span>19</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1512,7 +1507,7 @@
                                             <div class="product-2__rank"><span>20</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1525,7 +1520,7 @@
                                             <div class="product-2__rank"><span>01</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1536,7 +1531,7 @@
                                             <div class="product-2__rank"><span>02</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1547,7 +1542,7 @@
                                             <div class="product-2__rank"><span>03</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1558,7 +1553,7 @@
                                             <div class="product-2__rank"><span>04</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1569,7 +1564,7 @@
                                             <div class="product-2__rank"><span>05</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1580,7 +1575,7 @@
                                             <div class="product-2__rank"><span>06</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1591,7 +1586,7 @@
                                             <div class="product-2__rank"><span>07</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1602,7 +1597,7 @@
                                             <div class="product-2__rank"><span>08</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1613,7 +1608,7 @@
                                             <div class="product-2__rank"><span>09</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1624,7 +1619,7 @@
                                             <div class="product-2__rank"><span>10</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1635,7 +1630,7 @@
                                             <div class="product-2__rank"><span>11</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1646,7 +1641,7 @@
                                             <div class="product-2__rank"><span>12</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1657,7 +1652,7 @@
                                             <div class="product-2__rank"><span>13</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1668,7 +1663,7 @@
                                             <div class="product-2__rank"><span>14</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1679,7 +1674,7 @@
                                             <div class="product-2__rank"><span>15</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1690,7 +1685,7 @@
                                             <div class="product-2__rank"><span>16</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Sự im lặng của bầy cừu</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1701,7 +1696,7 @@
                                             <div class="product-2__rank"><span>17</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Thép đã tôi thế đấy</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1712,7 +1707,7 @@
                                             <div class="product-2__rank"><span>18</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đắc nhân tâm</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1723,7 +1718,7 @@
                                             <div class="product-2__rank"><span>19</span><i class="fa fa-arrow-down text-danger"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Đọc vị bất kỳ ai</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1734,7 +1729,7 @@
                                             <div class="product-2__rank"><span>20</span><i class="fa fa-arrow-up text-primary"></i>
                                             </div><a class="product-2__frame" href="./product-detail.html"><img src="./images/product-2.jpg" alt="" /></a>
                                             <div class="media-body">
-                                                <h3 class="text-14 mb-0"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
+                                                <h3 class="product-2__title"><a href="./product-detail.html">Lối sống tối giản của người Nhật</a></h3>
                                                 <div class="text-12 text-muted">Thomas Harris</div>
                                                 <div class="text-12 text-secondary">294 điểm</div>
                                             </div>
@@ -1775,13 +1770,12 @@
                         <div class="footer__col">
                             <div class="row">
                                 <div class="col-md-4 mb-4">
-                                    <div class="footer__title">Giới thiệu về Bizbooks</div>
+                                    <div class="footer__title">Hỗ trợ khách hàng</div>
                                     <ul class="f-menu">
-                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Điều khoản sử dụng</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Hướng dẫn mua hàng</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Giao nhận và thanh toán</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách đổi trả, bảo hành</a></li>
                                         <li class="f-menu__item"><a class="f-menu__link" href="#!">Chính sách bảo mật</a></li>
-                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Giới thiệu BizBooks</a></li>
-                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Hệ thống</a></li>
-                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Trung tâm - nhà sách</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md-4 mb-4">
@@ -1797,9 +1791,12 @@
                                 <div class="col-md-4 mb-4">
                                     <div class="footer__title">Tin tức - Sự kiện</div>
                                     <ul class="f-menu">
-                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Báo chí</a></li>
-                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Sự kiện – Hội thảo</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Báo chí - Truyền thông</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Kiến thức học tập</a></li>
                                         <li class="f-menu__item"><a class="f-menu__link" href="#!">Người nổi tiếng</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Review sách bizbooks</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Dịch vụ</a></li>
+                                        <li class="f-menu__item"><a class="f-menu__link" href="#!">Tuyển dụng</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-md mb-4 mb-md-0">
@@ -1823,7 +1820,7 @@
                 </div>
             </footer>
             <!-- modals + sticky widgets-->
-            <div class="sticky-btns"><a class="sticky-btns__item" href="#!"><img src="./images/icon-phone-circle.png" alt="" /></a><a class="sticky-btns__item" href="#!"><img src="./images/icon-messenger.png" alt="" /></a><a class="sticky-btns__item js-scroll-to" href="#!" data-target="body"><img src="./images/icon-angle-up-circle.png" alt="" /></a></div>
+            <div class="sticky-btns"><a class="sticky-btns__item" href="#!"><img src="./images/icon-phone-circle.png" alt="" /></a><a class="sticky-btns__item" href="#!"><img src="./images/icon-zalo.png" alt="" /></a><a class="sticky-btns__item js-scroll-to" href="#!" data-target="body"><img src="./images/icon-angle-up-circle.png" alt="" /></a></div>
             <div class="md-success modal fade" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content md-success__content">
